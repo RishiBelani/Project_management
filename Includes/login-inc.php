@@ -27,7 +27,7 @@
                         session_start();
                         $_SESSION['sessionId'] = $row['id'];
                         $_SESSION['sessionUser'] = $row['username'];
-                        header("Location: ../index.php?sucess=loggedin");
+                        header("Location: ../after_login.php?sucess=loggedin");
                         exit();
                     }else{
                         header("Location: ../index.php?error=wrongpass");

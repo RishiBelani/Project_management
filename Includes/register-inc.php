@@ -43,7 +43,7 @@ if(isset($_POST['submit'])){
                     $hashedPass = password_hash($password,PASSWORD_DEFAULT);
                     mysqli_stmt_bind_param($stmt,'ss',$username,$hashedPass);
                     mysqli_stmt_execute($stmt);
-                        header("Location: ../register.php?succes = registered");
+                        header("Location: ../login.php?success = registered");
                         exit();
                 }
             }
